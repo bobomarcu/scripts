@@ -16,4 +16,4 @@ data="$(date | awk '{print $2 " "  $3 " " $4}')"
 echo $user $mem1 $cpu $gpu $ip 
 
 
-curl -X POST -d "user=$user&mem=$mem1&cpu=$cpu&gpu=$gpu&host=$ip&os="MacOS"&data=$data" http://192.168.100.52/pc-data
+curl -X POST -d "user=$user&mem=$mem1&cpu=$cpu&gpu=$gpu&host=$ip&os="MacOS"&data=$data" http://192.168.7.211/pc-data
