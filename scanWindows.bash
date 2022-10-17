@@ -24,4 +24,4 @@ echo $ip2
 data="$( date | awk '{print $3 " " $2 " " $6}')"
 
 echo $data
- curl -X POST -d "user=$user&mem=$mem1&cpu=$cpu&host=$ip2&gpu=$gpu&os="Windows"&data=$data" http://192.168.100.52/pc-data;
+ curl -X POST -d "user=$user&mem=$mem1&cpu=$cpu&host=$ip2&gpu=$gpu&os="Windows"&data=$data" http://192.168.7.2111/pc-data;
