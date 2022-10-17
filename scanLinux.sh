@@ -38,6 +38,6 @@ echo "================================";
 echo "DONE ...";
 data="$(date | awk '{print $2 " " $3 " " $7}')"
 
-curl -X POST -d "user=$user&mem=$mem&cpu=$cpu&host=$host&gpu=$gpu&os="Linux"&data=$data" http://192.168.100.52/pc-data;
+curl -X POST -d "user=$user&mem=$mem&cpu=$cpu&host=$host&gpu=$gpu&os="Linux"&data=$data" http://192.168.7.211/pc-data;
 
 printf "\n";
