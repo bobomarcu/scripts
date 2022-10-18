@@ -3,9 +3,10 @@ user="$( whoami )"
 N=4
 mem1="$(systeminfo | findstr 'Total' | awk -v N=$N '{print $N}' )"
 
-cpu="$( wmic cpu get name )"
+cpu="$( wmic cpu get name | awk '{print $3 " " $6}')"
 
-gpu="$(wmic path win32_VideoController get name)"
+gpu="$(wmic path win32_VideoController get name | awk '{print $2 " " $3 " " $4}')"
+
 
 ip1="$(ipconfig | findstr  "v4" | awk -v N=14 '{print $N}')"
 
